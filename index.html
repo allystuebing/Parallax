@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="shortcut icon" href="favicon.ico"> 
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>Jack Dorsey's Inspirations</title>
+       <link rel="stylesheet" href="css/style.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+       <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	<script>
+   
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+
+
+ </head> 
+	
+<body>
+
+
+<!-- HEADER START-->   
+<header id="header">
+<div class="content">
+<div id="logo"><a href="">Jack Dorsey's Inspirations</a></div>
+
+<nav id="nav">
+	<ul>
+		<li><a href="#slide1" class="active" title="Next Section" >Home</a></li>
+		<li><a href="#slide2" title="Next Section">Virginia Woolf</a></li>
+		<li><a href="#slide3" title="Next Section">Robert Irwin</a></li>
+		<li><a  href="#slide4" title="Next Section">Steve Jobs</a></li>
+	</ul>
+</nav>
+</div>
+</header>	
+<!----- HEADER END--->   
+
+<!----- SLIDES START --->   	
+	<div id="slide1">
+		<div class="content">
+            <h1>Jack Dorsey</h1>
+		    <h2>American programmer and entrepreneur widely known as a co-founder and CEO of Twitter, and as the founder and CEO of Square, a mobile payments company</h2>
+		    <div id="divider"> </div>
+		     <h2>With Jack Dorsey's extensive experience, he has to have some people that inspired him along the way; therefore, here are some of his top role models over time:</h2>
+           
+	       <div id="new_year"> </div>
+		</div> 
+    </div> 
+
+	<div id="slide2">
+		<div class="content" >
+            <div class="quotes_container">
+		    <center><h3 class="quotes">Virginia Woof: English writer and one of the foremost modernists of the twentieth century</h3>
+		    <h4 class="quotes">Dorsey admires Woolf's writings/writing style, strength, confidence, and comfort with being isolated</h4>
+		  <img src="cutmypic.png"></center>
+		</div> 
+		</div> 
+    </div> 
+	
+	
+   <div id="slide3">
+		<div class="content">
+			   <div class="quotes_container">
+		       <center><h3 class="quotes">Robert Irwin: American artist</h3>
+		       <h4 class="quotes">Dorsey loved the fact that Irwin was a man who asked the easiest question with the hardest answer: Why? He was comfortable exploring the ultimate question of why. Irwin always challenged himself to be a better artist.</h4>
+		      <img src="robirwin.png"> </center>
+		    </div> 
+		</div> 
+    </div> 
+	
+	
+	<div id="slide4">
+		<div class="content">
+              <div class="quotes_container">
+               <center><h3 class="quotes">Steve Jobs:  American information technology entrepreneur and inventor. He was the co-founder, chairman, and chief executive officer (CEO) of Apple Inc.; CEO and largest shareholder of Pixar Animation Studios; a member of The Walt Disney Company's board of directors following its acquisition of Pixar; and founder, chairman, and CEO of NeXT Inc</h3>
+		    <h4 class="quotes">When he designs products, whether at Twitter or Square, Dorsey said he aims to create products that disappear so you are just using them. Calling Jobs “a mentor from afar,” Dorsey said Jobs has had a major impact on his approach to business. “I love simplifying something down to a base essence,” Dorsey said, speaking onstage at AsiaD in Hong Kong.
+But even more than the design principles that Jobs leaves behind, Dorsey said he is inspired by the way Jobs built Apple, the company.</h4>
+		  <img src="steve.png"> </center>
+		</div> 
+		</div> 
+    </div> 
+		<div id="copyright">Copyright: Ally Stuebing </a></div>  
+		</div> 
+		
+
+    </div> 
+	
+<!----- SLIDES END --->
+
+</body>
+</html>
